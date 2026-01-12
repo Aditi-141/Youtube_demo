@@ -54,9 +54,9 @@ export default function AppLayout({
     <div className="min-h-screen bg-white text-zinc-900">
       <Header />
 
-      <div className="pt-14">
+      <div className="pt-16">
         <div className="mx-auto flex h-[calc(100vh-56px)] max-w-[1920px]">
-          <div className="hidden lg:block w-[240px] shrink-0 border-none">
+          <div className="hidden lg:block w-[245px] pl-2 shrink-0 border-none">
             <Sidebar />
           </div>
 

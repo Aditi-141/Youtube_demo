@@ -93,7 +93,7 @@ function SidebarItem({
         fill={active ? "currentColor" : "none"}
       />
 
-      <span className={active ? "text-[15px] font-semibold" : "text-[15px] font-normal"}>
+      <span className={active ? "text-[15px] font-semibold pl-2" : "text-[15px] font-normal pl-2"}>
         {item.label}
       </span>
     </button>
