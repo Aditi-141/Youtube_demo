@@ -14,6 +14,7 @@ import {
   Flag,
   HelpCircle,
   MessageSquareWarning,
+  UserCircle2,
 } from "lucide-react";
 
 type NavItem = {
@@ -143,7 +144,7 @@ export default function Sidebar() {
       <Divider />
 
       {/* Sign in block */}
-      <div className="px-3 py-3">
+      <div className="px-4 py-3">
         <p className="text-[14px] leading-5 text-zinc-700">
           Sign in to like videos, comment, and subscribe.
         </p>
@@ -151,6 +152,7 @@ export default function Sidebar() {
           type="button"
           className="mt-3 inline-flex items-center rounded-full border border-zinc-300 px-4 py-2 text-[14px] font-semibold text-blue-600 hover:bg-blue-50"
         >
+        <UserCircle2 className="h-6 w-6 pr-0.5" />
           Sign in
         </button>
       </div>

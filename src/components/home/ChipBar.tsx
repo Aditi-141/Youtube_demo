@@ -8,7 +8,7 @@ type Props = {
 
 export default function ChipsBar({ chips, activeChip, onChange }: Props) {
   return (
-    <div className="flex gap-3 overflow-x-auto scrollbar-hide">
+    <div className="flex gap-2 overflow-x-auto scrollbar-hide">
       {chips.map((c, idx) => {
         const active = activeChip === c;
 
@@ -17,7 +17,7 @@ export default function ChipsBar({ chips, activeChip, onChange }: Props) {
             key={`${c}-${idx}`}
             onClick={() => onChange(c)}
             className={[
-              "shrink-0 rounded-[10px] px-3 py-2 text-sm font-medium",
+              "shrink-0 rounded-[10px] px-1 py-1 text-sm font-medium",
               "leading-none",
               active
                 ? "bg-black text-white"

@@ -24,9 +24,7 @@ export default function Header() {
           />
           </a>
         </div>
-
          
-
         {/* CENTER */}
         <div className="flex flex-1 justify-center px-2">
           <div className="flex w-full max-w-[720px] items-center gap-3">
@@ -88,7 +86,7 @@ export default function Header() {
         </div>
 
         {/* RIGHT */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 pr-4">
           <button
             className="grid h-10 w-10 place-items-center rounded-full hover:bg-zinc-100"
             aria-label="More"
@@ -99,9 +97,9 @@ export default function Header() {
 
           <button
             type="button"
-            className="flex items-center gap-2 rounded-full border border-zinc-300 px-3 py-2 text-[14px] font-semibold text-blue-600 hover:bg-blue-50"
+            className="flex items-center gap-2 rounded-full border border-zinc-300 px-3 py-1 text-[14px] font-semibold text-blue-600 hover:bg-blue-50"
           >
-            <UserCircle2 className="h-5 w-5" />
+            <UserCircle2 className="h-6 w-6" />
             Sign in
           </button>
         </div>

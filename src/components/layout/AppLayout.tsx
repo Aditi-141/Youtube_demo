@@ -19,13 +19,13 @@ function ChipsRow({
   onChipChange: (chip: string) => void;
 }) {
   return (
-    <div className="flex items-center gap-3 overflow-x-auto whitespace-nowrap scrollbar-hide">
+    <div className="flex items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-hide">
       {chips.map((chip, i) => {
         const active = chip === activeChip;
 
         return (
           <button
-            key={`${chip}-${i}`} // ✅ avoids duplicate-key warnings even if chip text repeats
+            key={`${chip}-${i}`}
             type="button"
             onClick={() => onChipChange(chip)}
             className={[
@@ -52,7 +52,6 @@ export default function AppLayout({
 }: Props) {
   return (
     <div className="min-h-screen bg-white text-zinc-900">
-      {/* Fixed header */}
       <Header />
 
       <div className="pt-14">
