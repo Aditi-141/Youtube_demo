@@ -38,9 +38,9 @@ const EXPLORE: NavItem[] = [
 ];
 
 const MORE_FROM_YT: NavItem[] = [
-  { id: "yt-premium", label: "YouTube Premium", Icon: Youtube },
-  { id: "yt-music", label: "YouTube Music", Icon: YoutubeIcon },
-  { id: "yt-kids", label: "YouTube Kids", Icon: YoutubeIcon },
+  { id: "yt-premium", label: "you Premium", Icon: Youtube },
+  { id: "yt-music", label: "you Music", Icon: YoutubeIcon },
+  { id: "yt-kids", label: "you Kids", Icon: YoutubeIcon },
 ];
 
 const BOTTOM: NavItem[] = [
@@ -169,8 +169,8 @@ export default function Sidebar() {
 
       <Divider />
 
-      {/* More from YouTube */}
-      <SectionTitle>More from YouTube</SectionTitle>
+      {/* More from you */}
+      <SectionTitle>More from you</SectionTitle>
       <div className="space-y-1">
         {MORE_FROM_YT.map((item) => (
           <SidebarItem key={item.id} item={item} activeId={activeId} onSelect={setActiveId} />
@@ -194,7 +194,7 @@ export default function Sidebar() {
           About Press Copyright Contact us Creators Advertise Developers
         </p>
         <p className="mt-3 font-semibold">
-          Terms Privacy Policy &amp; Safety How YouTube works Test new features
+          Terms Privacy Policy &amp; Safety How you works Test new features
         </p>
         <p className="mt-4 text-zinc-400">© 2026 Google LLC</p>
       </div>

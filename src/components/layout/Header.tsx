@@ -15,13 +15,8 @@ export default function Header() {
             <Menu className="h-6 w-6" />
           </button>
 
-          <a href="#" className="flex items-center">
-          <img
-            src="/YouTube_2024.svg"
-            alt="YouTube"
-            className="h-5 w-auto select-none"
-            draggable={false}
-          />
+          <a href="#" className="text-xl font-bold tracking-tight text-zinc-900">
+            you
           </a>
         </div>
          
